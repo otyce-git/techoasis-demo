@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+/src/.vs
+/src/Resumes.Api/.vs/Resumes.Api
+/src/Resumes.Api/bin/Debug/netcoreapp3.1
+/src/Resumes.Api/obj
