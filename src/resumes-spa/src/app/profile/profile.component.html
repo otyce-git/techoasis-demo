@@ -1,0 +1,34 @@
+
+
+<div *ngFor="let profile of profiles" class="card  shadow-sm">
+  <div class="card-body">
+    <div class="row">
+      <div class="col col-12 col-md-4">
+        <img src="{{profile.photoUrl}}" class="border border-gray p-1 shadow-sm"  style="width:100%; height:100% ; object-fit: cover;"/>
+      </div>
+      <div class="col col-12 col-md-8 text-left">
+        <h1 class="display-5">{{ profile.firstName }} {{ profile.lastName }}</h1>
+        <p class="lead">{{ profile.description}}</p>
+        <p class="text-muted text-sm-left">{{ profile.email}} | {{ profile.website}} | {{ profile.phoneNo}}</p>
+        
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <button type="button" class="btn btn-sm  btn-secondary">Visit Website</button>
+
+          <button type="button" class="btn btn-sm   btn-outline-primary">Request CV</button>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5">
+
+  <pagination [boundaryLinks]="true" 
+              [totalItems]="pagination?.totalItems"
+              [itemsPerPage]="pagination?.itemsPerPage"
+              [(ngModel)]="pagination.currentPage"
+              (pageChanged)="pageChanged($event)"
+    previousText="&lsaquo;" nextText="&rsaquo;" 
+    firstText="&laquo;" lastText="&raquo;"> 
+  </pagination>
+</div>
