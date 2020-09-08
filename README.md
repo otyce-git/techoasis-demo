@@ -3,7 +3,7 @@
 <ul>
 <li>.Net Core 3.1</li>
 <li>The latest stable version of node</li>
-<li>Microsoft SQL Seerver Express or Local DB</li>
+<li>Microsoft SQL Server Express or Local DB</li>
 </ul>
 
 <h3>Running the backend</h3>
