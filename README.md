@@ -16,7 +16,7 @@ The backend will start running on http://localhost:5000/ . The database will be 
 The connection string is in the appsettings.json file.
 </p>
 
-<h3>Running the front-en</h3>
+<h3>Running the front-end</h3>
 <p>Go into the src\resumes-spa folder and run the following commands for the command prompt</p>
 <ul>
 <li>npm install</li>
